@@ -1,0 +1,360 @@
+/*  PALETA DE COLORES PERSONALIZADA*/
+:root {
+  --primary-color: #3E98ED;
+  --secondary-color: #C9EDEA;
+  --light-bg: #EDE3E1;
+  --dark-blue: #20576E;
+  --slate-blue: #46536E;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: var(--light-bg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* SECCIÓN HERO CON IMAGEN DE FONDO*/
+.hero-section {
+ 
+  background: linear-gradient(
+      rgba(32, 87, 110, 0.85), 
+      rgba(70, 83, 110, 0.9)
+    ), 
+    url('../assets/img/fondo.jpg') center/cover no-repeat;
+  
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.hero-container {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.badge {
+  background-color: rgba(201, 237, 234, 0.2);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.description {
+  color: var(--light-bg);
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+/* Botones Hero */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #2b7bc4;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-color);
+  color: var(--dark-blue);
+  transform: translateY(-2px);
+}
+
+/* Avatar Hero */
+.hero-avatar img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 0 20px rgba(62, 152, 237, 0.4);
+}
+
+/* ==========================================================================
+   2. SECCIÓN PERFIL PROFESIONAL & BASES SÓLIDAS
+   ========================================================================== */
+.profile-section {
+  background-color: var(--dark-blue);
+  padding: 60px 0;
+}
+
+.profile-section h2 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.profile-intro {
+  margin-bottom: 25px;
+  color: var(--light-bg);
+}
+
+/* Acordeón interactivo para Bases Sólidas */
+.accordion-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.accordion-item {
+  background-color: var(--slate-blue);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(201, 237, 234, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.accordion-item:hover {
+  border-color: var(--primary-color);
+}
+
+.accordion-header {
+  padding: 15px 20px;
+  font-weight: 600;
+  color: var(--white);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cambio de color al pasar el cursor (Hover) */
+.accordion-header:hover {
+  color: var(--primary-color);
+  background-color: rgba(62, 152, 237, 0.1);
+}
+
+.accordion-header::after {
+  content: '▼';
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  transition: transform 0.3s ease;
+}
+
+.accordion-item[open] .accordion-header::after {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  padding: 15px 20px;
+  background-color: rgba(32, 87, 110, 0.5);
+  border-top: 1px solid rgba(251, 251, 251, 0.05);
+  color: var(--light-bg);
+}
+
+.accordion-body p {
+  margin-bottom: 8px;
+}
+
+.accordion-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Card Informativa de Landing Page */
+.info-card {
+  background-color: var(--slate-blue);
+  border-left: 4px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+  margin-top: 20px;
+}
+
+.info-card p {
+  margin-bottom: 8px;
+  color: var(--light-bg);
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+/*  3. SECCIÓN PROYECTOS DESTACADOS */
+.projects-section {
+  padding: 60px 0;
+  background-color: rgba(32, 87, 110, 0.7);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: var(--slate-blue);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(201, 237, 234, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.project-image-container {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  background-color: var(--dark-blue);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+.project-overlay-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font-weight: 600;
+  background-color: rgba(32, 87, 110, 0.8);
+  padding: 8px 16px;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+  color: var(--light-bg);
+  margin-bottom: 15px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: rgba(62, 152, 237, 0.2);
+  color: var(--secondary-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* Botón interactivo "Ver proyectos" con despliegue */
+.project-details summary {
+  list-style: none;
+}
+
+.btn-project {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-project:hover {
+  background-color: var(--secondary-color);
+  color: var(--dark-blue);
+}
+
+.project-expanded-content {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: var(--dark-blue);
+  border-radius: 6px;
+  border-left: 3px solid var(--primary-color);
+  font-size: 0.9rem;
+}

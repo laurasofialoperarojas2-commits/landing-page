@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Laura Sofía Lopera Rojas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ 
+  <!-- SECCIÓN HERO (PRINCIPAL) WITH BACKGROUND IMAGE -->
+ 
+  <section class="hero-section">
+    <div class="hero-container">
+      
+      <div class="hero-content">
+        <span class="badge">Disponible para Prácticas / Empleo</span>
+        <h1>Hola, soy <span class="highlight">Laura Sofía</span></h1>
+        <p class="subtitle">Desarrolladora de Software</p>
+        <p class="description">
+          Especializada en maquetación web moderna, interfaces accesibles y lógica de programación. 
+          Apasiónada por construir soluciones digitales limpias y eficientes.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#proyectos" class="btn btn-primary">Ver Proyectos &rarr;</a>
+          <a href="#contacto" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+
+      <div class="hero-avatar">
+      
+        <img src="assets/img/perfil.jpg" alt="Foto de perfil">
+      </div>
+
+    </div>
+  </section>
+
+
+ 
+  <!-- SECCIÓN PERFIL PROFESIONAL & BASES SÓLIDAS -->
+ 
+  <section class="profile-section">
+    <div class="container">
+      <h2>Perfil Profesional</h2>
+      <p class="profile-intro">
+        Aprendiz de la tecnología en <strong>Análisis y Desarrollo de Software (ADSO - SENA)</strong>. 
+        Cuento con bases sólidas en:
+      </p>
+
+      <!-- ACORDEÓN / PESTAÑAS DESPLEGABLES DE BASES SÓLIDAS -->
+      <div class="accordion-group">
+
+        <details class="accordion-item">
+          <summary class="accordion-header">Lógica de programación</summary>
+          <div class="accordion-body">
+            <p><strong>¿Qué es?</strong> Es la habilidad de estructurar pensamientos y algoritmos paso a paso para resolver un problema de forma eficiente mediante código.</p>
+            <p><strong>¿Para qué sirve?</strong> Permite desarrollar un pensamiento analítico para construir programas robustos, optimizar el uso de recursos y facilitar el aprendizaje de cualquier lenguaje de programación.</p>
+          </div>
+        </details>
+
+        <details class="accordion-item">
+          <summary class="accordion-header">Análisis de problemas</summary>
+          <div class="accordion-body">
+            <p><strong>¿Qué es?</strong> Es el proceso de descomponer requerimientos complejos en componentes más sencillos e identificables.</p>
+            <p><strong>¿Para qué sirve?</strong> Ayuda a comprender la raíz de las necesidades del usuario o cliente antes de escribir código, previniendo errores de arquitectura y garantizando soluciones precisas.</p>
+          </div>
+        </details>
+
+        <details class="accordion-item">
+          <summary class="accordion-header">Documentación de proyectos</summary>
+          <div class="accordion-body">
+            <p><strong>¿Qué es?</strong> Es el registro ordenado y detallado del diseño, la arquitectura, el código y los procesos de una aplicación software.</p>
+            <p><strong>¿Para qué sirve?</strong> Facilita el trabajo en equipo, asegura el mantenimiento a largo plazo del software y permite que nuevos desarrolladores entiendan rápidamente la estructura del proyecto.</p>
+          </div>
+        </details>
+
+      </div>
+
+     
+
+    </div>
+  </section>
+
+
+ 
+  <!-- SECCIÓN PROYECTOS DESTACADOS              -->
+ 
+  <section id="proyectos" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Proyectos Destacados</h2>
+
+      <div class="projects-grid">
+
+        <!-- PROYECTO 1 -->
+        <article class="project-card">
+          <div class="project-image-container">
+            
+            <img src="assets/img/app.jpg" alt="Página de conceptos" class="project-img">
+            <span class="project-overlay-title">app psicologica</span>
+          </div>
+          
+          <div class="project-info">
+            <h3>Aplicacion interactiva</h3>
+            <p>Recreación de la interfaz de selección de usuarios usando Flexbox, estados hover y centrado absoluto.</p>
+            
+            <div class="tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+            </div>
+
+            <!-- Botón desplegable / modal sencillo para ver más detalles -->
+            <details class="project-details">
+              <summary class="btn-project">Ver proyecto</summary>
+              <div class="project-expanded-content">
+                <p><strong>Detalles del Proyecto:</strong> Aplicativo enfocado en las emociones y estado de animo entre las diferentes personalidades del usuario.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- PROYECTO 2 -->
+        <article class="project-card">
+          <div class="project-image-container">
+           
+            <img src="assets/img/boceto.jpg" alt="Página responsiva" class="project-img">
+            <span class="project-overlay-title">Bocetos Web</span>
+          </div>
+
+          <div class="project-info">
+            <h3>Creacion paso a paso de paginas</h3>
+            <p>Maquetación de encabezado para producto digital aplicando recortes diagonales con clip-path.</p>
+            
+            <div class="tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS Grid</span>
+            </div>
+
+            <!-- Botón desplegable / modal sencillo para ver más detalles -->
+            <details class="project-details">
+              <summary class="btn-project">Ver proyecto</summary>
+              <div class="project-expanded-content">
+                <p><strong>Detalles del Proyecto:</strong> Maquetación responsiva adaptada a las necesidades he ideas del cliente para obtener una base visual.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+           <!-- PROYECTO 3 -->
+        <article class="project-card">
+          <div class="project-image-container">
+           
+            <img src="assets/img/inventario.jpg" alt="Página responsiva" class="project-img">
+            <span class="project-overlay-title">App responsiva</span>
+          </div>
+
+          <div class="project-info">
+            <h3>Aplicativo Web inventario</h3>
+            <p>Maquetación de encabezado para producto digital aplicando recortes diagonales con clip-path.</p>
+            
+            <div class="tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS Grid</span>
+            </div>
+
+            <!-- Botón desplegable / modal sencillo para ver más detalles -->
+            <details class="project-details">
+              <summary class="btn-project">Ver proyecto</summary>
+              <div class="project-expanded-content">
+                <p><strong>Detalles del Proyecto:</strong> Aplicativo responsivo ideal para uso de inventarios tanto economicos como materiales.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+
+        
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
